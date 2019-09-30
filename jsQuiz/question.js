@@ -19,20 +19,20 @@ class Quiz {
 			this.score = 0;
 	this.questions = questions;
 			this.questionIndex = 0;
-}
-getQuestion() {
+      }
+      getQuestion() {
 
-  return this.questions[this.questionIndex];
+          return this.questions[this.questionIndex];
 
-}
+        }
 
-}
     guess(answer) {
         if(this.getQuestion().isCorrectAnswer(answer)) {
    	        this.score++;
     		}
 
 		this.questionIndex++;
+}
 }
 
 function populate() {
